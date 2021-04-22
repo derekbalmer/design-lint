@@ -4,13 +4,14 @@ import {
   checkFills,
   checkStrokes,
   checkType,
-  customCheckTextFills
+  checkForDescription
+  //customCheckTextFills
   // customCheckTextFills,
 } from "./lintingFunctions";
 
 figma.showUI(__html__, { width: 360, height: 580 });
 
-let borderRadiusArray = [0, 2, 4, 8, 16, 24, 32];
+let borderRadiusArray = [0, 4, 8, 12, 16, "50%"];
 let originalNodeTree = [];
 let lintVectors = false;
 
@@ -320,6 +321,7 @@ figma.ui.onmessage = msg => {
     //   );
     // }
 
+    checkForDescription(node, errors);
     checkFills(node, errors);
     checkRadius(node, errors, borderRadiusArray);
     checkEffects(node, errors);

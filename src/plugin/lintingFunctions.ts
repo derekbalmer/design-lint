@@ -335,3 +335,19 @@ function RGBToHex(r, g, b) {
 
   return "#" + r + g + b;
 }
+
+// Check for description on components
+export function checkForDescription(node, errors) {
+  if (node.description === "") {
+    errors.push(
+      createErrorObject(
+        node,
+        "component",
+        "Missing description",
+        "Add a description to this component."
+      )
+    );
+  } else {
+    return;
+  }
+}
