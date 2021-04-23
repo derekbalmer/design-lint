@@ -11,7 +11,8 @@ import {
 
 figma.showUI(__html__, { width: 360, height: 580 });
 
-let borderRadiusArray = [0, 4, 8, 12, 16];
+// How to set pill for 50% in this array? Use 9999?
+let borderRadiusArray = [0, 4, 8, 12, 16, 9999];
 let originalNodeTree = [];
 let lintVectors = false;
 
