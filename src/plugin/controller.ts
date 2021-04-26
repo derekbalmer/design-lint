@@ -113,7 +113,7 @@ figma.ui.onmessage = msg => {
   }
 
   if (msg.type === "reset-border-radius") {
-    borderRadiusArray = [0, 2, 4, 8, 16, 24, 32];
+    borderRadiusArray = [0, 4, 8, 12, 16, 9999]; // Why isn't this just borderRadiusArray?
     figma.clientStorage.setAsync("storedRadiusValues", []);
 
     figma.ui.postMessage({
