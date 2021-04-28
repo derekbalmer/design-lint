@@ -1,7 +1,7 @@
 {
   "name": "Pulse Design Lint",
-  "id": "801195587640428208",
-  "api": "1.0.0",
+  "id": "969328142162840497",
+  "api": "0.0.1",
   "main": "dist/code.js",
   "ui": "dist/ui.html"
 }
