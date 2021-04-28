@@ -25,12 +25,11 @@ const App = ({}) => {
   const [activeNodeIds, setActiveNodeIds] = React.useState([]);
   const [borderRadiusValues, setBorderRadiusValues] = useState([
     0,
-    2,
     4,
     8,
+    12,
     16,
-    24,
-    32
+    9999
   ]);
   const [lintVectors, setLintVectors] = useState(false);
   const [initialLoad, setInitialLoad] = React.useState(false);
